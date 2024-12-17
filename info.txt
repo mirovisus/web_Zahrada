@@ -1,0 +1,4 @@
+Aplikace Zahrada umožňuje uživatelům spravovat své zahrady a zadávat poptávky na služby související s jejich údržbou. 
+Uživatelé mohou prohlížet všechny své zahrady, sledovat detaily o jejich úpravách a přidávat nové požadavky.
+Aplikace je určena také pro pracovníky, kteří mohou přidávat reporty o provedené práci, včetně fotek a spotřebovaného materiálu.
+Na základě historie úprav může aplikace nabízet pravidelnou údržbu v závislosti na ročním období.

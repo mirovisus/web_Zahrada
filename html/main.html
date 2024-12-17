@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahrada</title>
+
+    <link rel="stylesheet" href="../style/style.css">
+    <!--google fonts link-->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&family=Montserrat:wght@100..900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    </style>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <ul class="navlist left">
+            <li><a href="main.html" class="active">Domů</a></li>
+            <li><a href="sluzby.html">Služby</a></li>
+            <li><a href="aplikace.html">Aplikace</a></li>
+            
+            <div class="bx bx-menu" id="login">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: scaleX(-1);">
+                  <path d="M6 17C6 17.93 6 18.395 6.10222 18.7765C6.37962 19.8117 7.18827 20.6204 8.22354 20.8978C8.60504 21 9.07003 21 10 21H16.2C17.8802 21 18.7202 21 19.362 20.673C19.9265 20.3854 20.3854 19.9265 20.673 19.362C21 18.7202 21 17.8802 21 16.2V7.8C21 6.11984 21 5.27976 20.673 4.63803C20.3854 4.07354 19.9265 3.6146 19.362 3.32698C18.7202 3 17.8802 3 16.2 3H10C9.07003 3 8.60504 3 8.22354 3.10222C7.18827 3.37962 6.37962 4.18827 6.10222 5.22354C6 5.60504 6 6.07003 6 7M12 8L16 12M16 12L12 16M16 12H3" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>          
+            </div>
+        </ul>
+
+        <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="javascript:void(0)">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 6L6 18M6 6L18 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                    
+            </a></li>
+            <li><a href="main.html" class="active">Domů</a></li>
+            <li><a href="sluzby.html">Služby</a></li>
+            <li><a href="aplikace.html">Aplikace</a></li>
+        </ul>
+
+        <a href="#" class="logo">ZAHRADA</a>
+        <ul class="navlist right">
+            <li><a href="login.html">Přihlásit se</a></li>
+            <button type="button">Registrovat se</button>
+            
+            <div class="bx bx-menu" id="menu-icon" onclick=showSidebar()>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M3 12H21M3 6H21M3 18H21" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg> 
+            </div>
+        </ul>
+    </header>
+
+    <script>
+        function showSidebar() {
+            const sidebar = document.querySelector(' .sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar() {
+            const sidebar = document.querySelector(' .sidebar')
+            sidebar.style.display = 'none'
+        }
+        document.getElementById('login').addEventListener('click', function() {
+            window.location.href = 'login.html';
+        });
+    </script>
+    <!--End of navbar -->
+
+    <!-------Hero-section------->
+    <section class="hero" id="hero-section">
+        <div id="hero-text">
+            <h1>Vytvořte si<br />zahradu<br />podle svých vizí</h1>
+            <h1 class="mobile">Vytvořte si zahradu<br />podle svých vizí</h1>
+            <h1 class="tablet">Vytvořte si zahradu podle svých vizí</h1>
+            <p class="hero">
+                Zadejte informace o své zahradě a připojte své nápady.<br />
+                Naši odborníci se postarají o zbytek.
+            </p>
+            <p class="hero tablet">
+                Zadejte informace o své zahradě a připojte své nápady.
+                Naši odborníci se postarají o zbytek.
+            </p>
+            <p class="hero mobile">
+                Zadejte informace o své zahradě a připojte<br>své nápady.
+                Naši odborníci se postarají o zbytek.
+            </p>
+            <button type="button" class="download web">
+                <h4 class="white">Stáhnout aplikaci</h4>
+                <svg class="icon btn" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M7 7L17 17M17 17V7M17 17H7" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>              
+            </button>
+        </div>
+
+        <div id="hero-image">
+            <img src="/images/garden_after.png" alt="Zahrada do">
+        </div>
+
+        <button type="button" class="download mobile">
+            <h4 class="white">Stáhnout aplikaci</h4>
+            <svg class="icon btn" width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7 7L17 17M17 17V7M17 17H7" stroke="white" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>              
+        </button>
+
+        <div class="card">
+            <div class="image-container">
+              <h4 class="white">Sledujte proměny</h4>
+            </div>
+            <p>Uložte si fotografie před
+              a po úpravách a objevte,
+              jak se mění.</p>
+        </div>
+    </section>
+    <!-------End of hero------->
+    
+    <!-------About------->
+    <section id="about">
+        <h2>O nás</h2>
+        <p>“Jsme profesionální zahradnická firma <span>s vášní pro vytváření
+          krásných a funkčních zahrad.</span> Nabízíme širokou škálu služeb
+          <span>od návrhu až po údržbu.</span> Vaše zahrada bude místem radosti.”</p>
+    </section>
+    <!-------End of about------->
+
+    <!-------Features------->
+    <section class="grid-section" id="features">
+        <h2>Proč vybrat nás</h2>
+        <div id="feat" class="seznam">
+            <div class="features promeny">
+                <!-- <img src="/images/garden_after.png" alt="Na obrázku je klidná zahrada u venkovského domu. Vidíme dvě lehátka postavená na zeleném trávníku, stromy poskytující stín a dům s kamennou fasádou a dřevěnými okenicemi. Atmosféra působí útulně a slunně.">
+                <img src="/images/garden_before.png" alt="Na tomto obrázku je venkovský dům s kamennou fasádou a dřevěnými okenicemi. V popředí roste vysoká suchá tráva, za ní je nízký dřevěný plot."> -->
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="/images/garden_after.png" alt="Na obrázku je klidná zahrada u venkovského domu. Vidíme dvě lehátka postavená na zeleném trávníku, stromy poskytující stín a dům s kamennou fasádou a dřevěnými okenicemi. Atmosféra působí útulně a slunně.">
+                        <img id="slide-2" src="/images/garden_before.png" alt="Na tomto obrázku je venkovský dům s kamennou fasádou a dřevěnými okenicemi. V popředí roste vysoká suchá tráva, za ní je nízký dřevěný plot.">
+                    </div>
+
+                    <div class="nav-panel">
+                        <a href="javascript:void(0)" id="prev">
+                            <svg width="38" height="20" viewBox="0 0 38 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.44 10L37 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.64001 1C6.26588 4.51472 4.37414 6.48528 1.00002 10L9.64001 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </a>
+
+                        <div class="slider-nav">
+                            <a href="#slide-1"></a>
+                            <a href="#slide-2"></a>
+                        </div>
+
+                        <a href="javascript:void(0)" id="next">
+                            <svg width="38" height="20" viewBox="0 0 38 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.56 10L0.999998 10" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M28.36 1C31.7341 4.51472 33.6259 6.48528 37 10L28.36 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>                                
+                        </a>
+                    </div>
+                </div>
+
+                <h3>Sledujte proměny</h3>
+                <p>
+                    Ukládejte fotografie před a po úpravách a objevujte, jak se vaše zahrada mění a vyvíjí.
+                </p>
+            </div>
+
+            <div class="features misto">
+                <h3>Vše na jednom místě</h3>
+                <p class="web">
+                  Spravujte a sledujte každý projekt<br>přímo z vašeho mobilního zařízení.
+                </p>
+                <p class="tablet">
+                    Spravujte a sledujte každý projekt přímo z vašeho mobilního zařízení.
+                </p>
+            </div>
+
+            <div class="features report">
+                <h3>Reporty</h3>
+                <p class="web">
+                  Získejte snadný přístup k reportům<br>přidaným k vašim zahradám.
+                </p>
+                <p class="tablet">
+                Získejte snadný přístup k reportům přidaným k vašim zahradám.
+                </p>
+            </div>
+
+            <div class="features hodnoceni">
+                <h3>Hodnocení</h3>
+                <p>
+                  Po dokončení každé práce<br>můžete ohodnotit pracovníky.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-------End of features------->
+
+    <!------- Footer ------->
+    <footer>
+        <div class="container">
+            <div class="col1">
+                <a href="#" class="logo">ZAHRADA</a>
+            </div>
+            <div class="col2">
+                <ul class="foot-menu">
+                    <li><a href="#top">Nahoru</a></li>
+                    <li><a href="javascript:void(0)">Kontakty</a></li>
+                    <li><a href="javascript:void(0)">FAQ</a></li>
+                    <li><a href="javascript:void(0)">Copyright</a></li>
+                    <li><a href="javascript:void(0)">Cookies</a></li>
+                </ul>
+            </div>
+            <div class="col3">
+                <ul class="media-icons">
+                    <li><a href="javascript:void(0)">
+                        <i class="fab fa-facebook"></i>
+                    </a></li>
+                    <li><a href="javascript:void(0)">
+                        <i class="fab fa-instagram"></i>
+                    </a></li>
+                    <li><a href="javascript:void(0)">
+                        <i class="fab fa-linkedin"></i>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!------- End of footer ------->
+
+
+</body>
+</html>
